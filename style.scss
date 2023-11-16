@@ -1,21 +1,80 @@
-.all{
+.container{
     background-image:url(./img/red_dice.jpg);
+    background-repeat: no-repeat;
     height: 100vh;
-    background-size: cover;
+    background-size: 1500px;
+    background-position:top;
     display: flex;
     flex-direction: column;
+    align-items:center;
+    animation: blurEffect .7s 1;
     
-        h2{
-            
+  
+    .baslik{
+        padding-left:1rem ;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2{        
+            box-shadow: 0px 0px 20px red;
+            text-shadow: 0px 0px 5px red;
             font-family: 'Courier New', Courier, monospace;
             font-size: 4rem;
             font-weight: 500;
             color: whitesmoke;
+            background-color: rgba(whitesmoke, .4) ;
+            border-radius: 5px;
+            margin-bottom: 0;
+            // width: fit-content;
+        }
+        
+        h4{        
+            @extend h2;
+            margin-top: 0;
+            font-size: 3rem;
         }
 
         p{
-            color: aliceblue;
-            font-size: larger;
+            color: white;
+            font-size: 1.6rem;
             font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            line-height: 2rem;
+            // align-items: center;
+            background-color: rgba(whitesmoke, .4) ;
+            width: fit-content;
+            text-shadow: 0px 0px 5px black;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px red;
         }
+        
+        button{
+            text-shadow: 0px 0px 5px red;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            border: none;
+            padding: 1.5rem;
+            width: 40vw;
+            // margin: auto;
+            color: white;
+            border-radius: 10px;
+            background-color:transparent ;
+            
+            &:hover{
+                background-color: rgba(whitesmoke, .3) ;
+                transform: scale(1.05);
+            }
+        }
+}
+
+@keyframes blurEffect{
+    0%{filter: blur(10px);}
+    20%{filter: blur(8px);}
+    40%{filter: blur(6px);}
+    60%{filter: blur(4px);}
+    80%{filter: blur(2px);}
+    100%{filter: blur(0px);}
 }
