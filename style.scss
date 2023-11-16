@@ -1,0 +1,21 @@
+.all{
+    background-image:url(./img/red_dice.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+        h2{
+            
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 4rem;
+            font-weight: 500;
+            color: whitesmoke;
+        }
+
+        p{
+            color: aliceblue;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+}
