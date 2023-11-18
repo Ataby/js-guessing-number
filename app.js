@@ -10,12 +10,12 @@ function basla(){
         sayac+=1;
         
         if(tahmin < sayi){alert('Tahmininizi yükseltin');}
-        if(tahmin > sayi){alert('Tahmininizi düşürün');}
+        else if(tahmin > sayi){alert('Tahmininizi düşürün');}
 
         if (tahmin == sayi && sayac==1){ alert("tebrikler tek seferde bildiniz."); break;}
 
-        if (tahmin == sayi && sayac!=1){ alert("tebrikler doğru tahmin.");break;}
-        if (tahmin == sayi && sayac!=1){ alert("tebrikler doğru tahmin.");break;}
-        if (tahmin != sayi && denemeHakki==0){ alert("maalesef tahmin edemediniz.");break;}
+        else if (tahmin == sayi && sayac!=1){ alert("tebrikler doğru tahmin.");break;}
+        else if (tahmin == sayi && sayac!=1){ alert("tebrikler doğru tahmin.");break;}
+       else if (tahmin != sayi && denemeHakki==0){ alert("maalesef tahmin edemediniz.");break;}
     }
 }
